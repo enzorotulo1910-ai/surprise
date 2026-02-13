@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>For You ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container" id="introPage">
+    <div class="gif-box">
+        <img id="introGif" src="cutie.jpg" alt="Cute GIF">
+    </div>
+    <h2 id="introText">Ikaw ba ang baby ko? 💗</h2>
+    <div id="introButtons">
+        <button onclick="introYes()">Yes</button>
+        <button onclick="introNo()">No</button>
+    </div>
+</div>
+    
+
+</div>
+
+
+<!-- PASSWORD PAGE -->
+<div class="container hidden" id="loginPage">
+    <div class="gif-box">
+        <img src="download.gif" alt="cute gif">
+    </div>
+    <h1>Oops Verification Lang </h1>
+    <p>ANO BIRTHMONTH NG CRUSH/BABY MO?(CAPITALIZE DAPAT)</p>
+    <input type="password" id="passwordInput" placeholder="Enter password">
+    <br>
+    <button onclick="checkPassword()">Enter</button>
+</div>
+
+<!-- WOW PAGE -->
+<div class="container hidden" id="wowPage">
+    <div class="gif-box">
+        <img src="mweheh.gif" alt="cute gif">
+    </div>
+    <h1>waw ang galing ng baby ko na yan kess keta mamaya sa col</h1>
+    <button onclick="goToOptions()">Next</button>
+</div>
+
+<!-- OPTIONS PAGE -->
+<div class="container hidden" id="optionPage">
+    <h2>sana magustuhan mo babyyy mwaa
+        -inso
+    </h2>
+    <button onclick="startReasons()">Memories</button>
+    <br><br>
+    <button id="unlockBtn" class="locked"> Video 💖🔒</button>
+    <button class="locked">Special 🔒</button>
+</div>
+
+<!-- REASONS PAGE -->
+<div class="container hidden" id="reasonsPage">
+    <h2 id="reasonTitle"></h2>
+
+    <div class="image-box">
+        <img id="reasonImage" src="">
+    </div>
+
+    <div class="message-box">
+        <p id="reasonMessage"></p>
+    </div>
+
+    <button onclick="nextReason()">Next</button>
+</div>
+
+<!-- FINAL NOTE PAGE -->
+<div class="container hidden" id="finalPage">
+    <h2>One More Thing Baby💌</h2>
+    <div class="message-box">
+        <p id="finalMessage">
+           i just want to say thank you sa lahat ng time and effort na binibigay mo. i just want you to know na super chine-cherish ko lahat ng memories natin together. everything feels perfect kapag kasama kita kaya wag mo isipin na baka magsawa mee sayo. more memories with you pa baby.  someday sana irl naman nextt mwehehe mwaaa☺️❤️
+        </p>
+    </div>
+    <button onclick="unlockSection()">Continue</button>
+</div>
+
+<!-- VIDEO PAGE -->
+<div class="container hidden" id="videoPage">
+
+    <h2 id="videoTitle">Watch mo 💖</h2>
+
+    <p id="videoLabel">First Lead natin sa ps ko mweheheh grabe pinanood ko iba na rin yung improvements ko now grabe kasi support ng    baby ko na yan</p>
+
+    <div style="margin:20px 0;">
+        <video id="seriesVideo" width="100%" controls>
+            <source src="firstlead.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <button onclick="nextVideo()">Next</button>
+    
+</div>
+
+<<!-- FLOWERS & LETTER PAGE -->
+<div class="container hidden" id="flowerPage">
+
+    <div class="flower-wrapper">
+
+        <!-- LEFT SIDE -->
+        <div class="flower-left">
+            <h2>Flowers for my babyy</h2>
+
+            <img src="flower.jpg" class="flower-img">
+
+            <p class="flower-caption">
+                Favorite flowers ni Ley 
+            </p>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="flower-right">
+            <div class="note-box">
+                <p id="typedText"></p>
+            </div>
+        </div>
+
+    </div>
+
+    <button onclick="backToMenu()" class="back-btn">
+        Back to Menu
+    </button>
+
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
